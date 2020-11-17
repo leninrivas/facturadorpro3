@@ -10,7 +10,7 @@
                   <a href="#">Categorias</a>
                   <ul>
                       @foreach ($items as $item)
-                        <li class="{{ ($tagid == $item->id) ? 'active':'' }}"><a href="{{ route("tenant.ecommerce.index", ['tagid' => $item->id]) }}">{{ $item->name }}</a></li>
+                        <li class="{{ ($tagid == $item->id) ? 'active':'' }}"><a href="{{ route("tenant.ecommerce.category", ['tagid' => $item->id]) }}">{{ $item->name }}</a></li>
                       @endforeach
                   </ul>
               </li>
